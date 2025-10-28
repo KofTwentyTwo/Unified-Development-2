@@ -2,7 +2,7 @@
 
 A multi-module IntelliJ IDEA project that manages several interconnected applications including a Java web server, frontend dashboards, and database management tools.
 
-## Project Setup
+## Quick Start
 
 ### Prerequisites
 
@@ -12,9 +12,9 @@ A multi-module IntelliJ IDEA project that manages several interconnected applica
 - **Maven** (for Java project management)
 - **Git** (for version control)
 
-### Opening the Project in IntelliJ IDEA
+### Getting Started
 
-1. **Clone the repository** (if not already done):
+1. **Clone the repository**:
    ```bash
    git clone <repository-url>
    cd UD2
@@ -32,13 +32,31 @@ A multi-module IntelliJ IDEA project that manages several interconnected applica
    - Ensure the correct JDK is selected (JDK 24 recommended)
    - Maven dependencies will be automatically resolved
 
-## Project Structure
+4. **Set up the development environment**:
+   - Ensure all parent directories (`../Kof22/`, `../QRun-IO/`) exist
+   - Run the `ServerAndFrontend` configuration to start development
 
-This project serves as a coordination point for multiple related applications:
+## Repository Structure
+
+This git repository serves as a coordination point for multiple related applications:
+
+```
+UD2/
+├── README.md              # This file
+├── UD2.iml               # IntelliJ IDEA project file
+└── log/                  # Log files
+    └── qqq.log
+```
+
+### Related Projects
+
+The UD2 project coordinates with several external applications:
 
 - **Kof22 Website**: Java-based web server (`../Kof22/Website/`)
 - **QQQ Frontend Dashboard**: React-based frontend (`../QRun-IO/qqq-frontend-material-dashboard/`)
 - **QQQ Backend**: Java middleware (`../QRun-IO/qqq/`)
+
+> **Note**: These external projects should be located in the parent directories as shown above for the IntelliJ run configurations to work properly.
 
 ## Run Configurations
 
@@ -158,12 +176,65 @@ The project includes several pre-configured run targets accessible through the I
 - `QQQ_DEPLOYMENT`: Set to `dev` for development mode
 - `QFMD_APP_BASE_PATH`: Set to `/admin` for application base path
 
+## Git Workflow
+
+### Branch Management
+
+- **`develop`**: Main development branch
+- **`main`**: Production-ready releases
+- **Feature branches**: Create from `develop` for new features
+
+### Common Git Commands
+
+```bash
+# Check status
+git status
+
+# Switch to develop branch
+git checkout develop
+
+# Pull latest changes
+git pull origin develop
+
+# Create a new feature branch
+git checkout -b feature/your-feature-name
+
+# Commit changes
+git add .
+git commit -m "Your commit message"
+
+# Push changes
+git push origin your-branch-name
+```
+
 ## Troubleshooting
 
+### Project Setup Issues
 - **Module not found**: Ensure all parent directories (`../Kof22/`, `../QRun-IO/`) exist
 - **JDK issues**: Verify JDK 24 is installed and selected in project settings
 - **Maven issues**: Check Maven settings and ensure all dependencies are resolved
 - **Node.js issues**: Verify Node.js is installed and accessible from IntelliJ
+
+### Git Issues
+- **Repository not found**: Ensure you've cloned the repository correctly
+- **Permission denied**: Check your git credentials and repository access
+- **Merge conflicts**: Resolve conflicts in IntelliJ or use `git status` to identify conflicted files
+
+## Contributing
+
+1. **Fork the repository** (if you don't have write access)
+2. **Create a feature branch** from `develop`
+3. **Make your changes** and test thoroughly
+4. **Commit your changes** with descriptive messages
+5. **Push to your branch** and create a pull request
+6. **Request review** from team members
+
+### Commit Message Guidelines
+
+- Use clear, descriptive commit messages
+- Start with a verb in imperative mood (e.g., "Add", "Fix", "Update")
+- Include context when necessary
+- Keep the first line under 50 characters
 
 ## Additional Notes
 
@@ -171,3 +242,4 @@ The project includes several pre-configured run targets accessible through the I
 - Frontend projects use npm for package management
 - Database migrations are handled by Liquibase
 - The project supports both development and production configurations
+- This repository serves as a coordination point for multiple related projects
