@@ -1,0 +1,32 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Generate QQQ API (openapi.json)" type="SwaggerCodegen" folderName="kof22-website" editBeforeRun="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
+    <option name="customTemplatesPath" value="" />
+    <option name="generateToPath" value="$PROJECT_DIR$/../Kof22/Website/src/main/frontend/src/api" />
+    <option name="generationParameters">
+      <list>
+        <CliArgumentViewModel>
+          <option name="name" value="useSingleRequestParameter" />
+          <option name="value" value="true" />
+        </CliArgumentViewModel>
+        <CliArgumentViewModel>
+          <option name="name" value="supportsES6" />
+          <option name="value" value="true" />
+        </CliArgumentViewModel>
+        <CliArgumentViewModel>
+          <option name="name" value="withInterfaces" />
+          <option name="value" value="true" />
+        </CliArgumentViewModel>
+      </list>
+    </option>
+    <option name="generatorType" value="OPENAPI_GENERATOR_V7" />
+    <option name="jdkPath" value="$APPLICATION_HOME_DIR$/jbr/Contents/Home/bin/java" />
+    <option name="language" value="typescript-fetch" />
+    <option name="projectPathOnTarget" />
+    <option name="selectedOptions">
+      <list />
+    </option>
+    <option name="specificationPath" value="$PROJECT_DIR$/../Kof22/Website/src/main/frontend/src/api/openapi.json" />
+    <method v="2" />
+  </configuration>
+</component>

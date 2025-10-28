@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServerAndFrontend JavaScript" type="JavascriptDebugType" folderName="kof22-website" uri="http://localhost:8000/admin/">
+    <method v="2" />
+  </configuration>
+</component>

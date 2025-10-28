@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServerOnly" type="Application" factoryName="Application" folderName="kof22-website">
+    <envs>
+      <env name="QQQ_DEPLOYMENT" value="dev" />
+      <env name="QFMD_APP_BASE_PATH" value="/admin" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.kof22.website.Server" />
+    <module name="kof22-website" />
+    <option name="PROGRAM_PARAMETERS" value="$MODULE_DIR$$MODULE_WORKING_DIR$" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Kof22/Website" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.kof22.website.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
